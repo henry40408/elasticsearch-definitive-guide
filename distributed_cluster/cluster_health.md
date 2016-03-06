@@ -1,12 +1,12 @@
-# 集羣健康
+# 叢集健康
 
-在 Elasticsearch 集羣中可以監控統計很多信息，其中最重要的就是：**集羣健康(cluster health)**。它的 `status` 有 `green`、`yellow`、`red` 三種；
+在 Elasticsearch 叢集中可以監控統計很多資訊，其中最重要的就是：**叢集健康(cluster health)**。它的 `status` 有 `green`、`yellow`、`red` 三種；
 
 ```
 GET /_cluster/health
 ```
 
-在一個沒有索引的空集羣中，它將返回如下信息：
+在一個沒有索引的空叢集中，它將返回如下資訊：
 
 ```Js
 {
@@ -22,9 +22,9 @@ GET /_cluster/health
    "unassigned_shards":     0
 }
 ```
-1.  `status` 是我們最應該關注的字段。
+1.  `status` 是我們最應該關注的欄位。
 
-`status` 可以告訴我們當前集羣是否處於一個可用的狀態。三種顏色分別代表：
+`status` 可以告訴我們當前叢集是否處於一個可用的狀態。三種顏色分別代表：
 
 | 狀態     | 意義                                     |
 | -------- | ---------------------------------------- |

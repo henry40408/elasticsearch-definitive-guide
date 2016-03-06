@@ -1,4 +1,4 @@
-# 映射
+# 對映
 
 As explained in <<data-in-data-out>>, each document in an index has a _type_.
 Every type has its own _mapping_ or _schema definition_. A mapping

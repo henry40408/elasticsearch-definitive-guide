@@ -9,7 +9,7 @@ yum install java-1.7.0-openjdk -y
 
 安裝 Elasticsearch 只有一個要求，就是要安裝最新版本的JAVA。你可以到官方網站下載它：[www.java.com](http://www.java.com).
 
-你可以在這裏下載到最新版本的 Elasticsearch：
+你可以在這裡下載到最新版本的 Elasticsearch：
 [elasticsearch.org/download](http://www.elasticsearch.org/download/).
 
 ```js
@@ -23,7 +23,7 @@ cd  elasticsearch-$VERSION
 
 
 # 安裝 Marvel
-###### 這是個付費的監控插件 暫時先不翻譯
+###### 這是個付費的監控外掛 暫時先不翻譯
 [Marvel](http://www.elasticsearch.com/marvel) is a management and monitoring
 tool for Elasticsearch which is free for development use. It comes with an
 interactive console called Sense which makes it very easy to talk to
@@ -49,16 +49,16 @@ disable data collection with this command:
 echo 'marvel.agent.enabled: false' >> ./config/elasticsearch.yml
 ```
 
-# 運行 Elasticsearch
+# 執行 Elasticsearch
 
-Elasticsearch 已經蓄勢待發，現在你便可以運行它了：
+Elasticsearch 已經蓄勢待發，現在你便可以執行它了：
 
 ```js
 ./bin/elasticsearch
 ```
-如果你想讓它在後臺保持運行的話可以在命令後面再加一個 `-d`
+如果你想讓它在後臺保持執行的話可以在命令後面再加一個 `-d`
 
-開啓後你就可以使用另一個終端窗口來進行測試了:
+開啟後你就可以使用另一個終端視窗來進行測試了:
 
 ```js
 curl 'http://localhost:9200/?pretty'
@@ -79,11 +79,11 @@ curl 'http://localhost:9200/?pretty'
 }
 ```
 
-這就說明你的 Elasticsearch _集羣_ 已經上線運行了，這時我們就可以進行各種實驗了。
+這就說明你的 Elasticsearch _叢集_ 已經上線運行了，這時我們就可以進行各種實驗了。
 
 ****
-> ###集羣和節點
+> ###叢集和節點
 
-_節點_ 是 Elasticsearch 運行的實例。_集羣_ 是一組有着同樣`cluster.name`的節點，它們協同工作，互相分享數據，提供了故障轉移和擴展的功能。當然一個節點也可以是一個集羣。
+_節點_ 是 Elasticsearch 執行的例項。_叢集_ 是一組有著同樣`cluster.name`的節點，它們協同工作，互相分享資料，提供了故障轉移和擴充套件的功能。當然一個節點也可以是一個叢集。
 
 ****
